@@ -2,9 +2,9 @@ import cv2 as cv
 
 # reading images 
 
-# img = cv.imread("photos/cat.jpg")
-# cv.imshow("Cat" , img)
-# cv.waitKey(0)
+img = cv.imread("photos/cat.jpg")
+cv.imshow("Cat" , img)
+cv.waitKey(0)
 
 # reading videos
 

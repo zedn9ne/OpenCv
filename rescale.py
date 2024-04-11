@@ -8,20 +8,20 @@ def rescaleFrame(frame , scale = .75):
     
     return cv.resize (frame , dimensions , interpolation= cv.INTER_AREA)
     
-# capture = cv.VideoCapture('videos/dog.mp4')
+capture = cv.VideoCapture('videos/dog.mp4')
 
-# while True :
-#     isTrue , frame = capture.read()
-#     frame_resized = rescaleFrame(frame)
+while True :
+    isTrue , frame = capture.read()
+    frame_resized = rescaleFrame(frame)
     
-#     # cv.imshow( "Video", frame);
-#     # cv.imshow("Video Resized" , frame_resized);
+    # cv.imshow( "Video", frame);
+    # cv.imshow("Video Resized" , frame_resized);
     
-#     if cv.waitKey(20) & 0xff == ord('q'):
-#         break;
+    if cv.waitKey(20) & 0xff == ord('q'):
+        break;
 
-# capture.release();
-# cv.destroyAllWindows();
+capture.release();
+cv.destroyAllWindows();
 
 #  resizing image
 
